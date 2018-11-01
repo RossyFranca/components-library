@@ -1,0 +1,19 @@
+[
+  {
+    "label":"Menu1", "href":"", "children":[
+      {"label":"submenu1", "type": "level2", "href":""},
+      {"label":"submenu1", "type": "level2", "href":""},
+      {"label":"submenu1", "type": "level2", "href":""},
+      {"label":"submenu1", "type": "level2", "href":""}
+    ]
+  },
+  {
+    "label":"Menu2", "href":"", "children":[
+      {"label":"submenu2", "type": "level2", "href":""},
+      {"label":"submenu2", "type": "level2", "href":""},
+      {"label":"submenu2", "type": "level2", "href":""},
+      {"label":"submenu2", "type": "level2", "href":""}
+    ]
+  }
+
+]

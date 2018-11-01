@@ -1,0 +1,13 @@
+<div class="collapsible" (click)="onToggle()">
+
+  <div class="collapsible-header">
+    <span class="collapsible-header-label">{{label}}</span>
+    <span class="collapsible-header-desc">{{desc}}</span>
+
+  </div>
+
+  <div #content class="collapsible-content">
+    <div class="collapsible-content-spacing"></div>
+    <ng-content></ng-content>
+  </div>
+</div>

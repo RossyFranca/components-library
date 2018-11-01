@@ -1,0 +1,32 @@
+.header{
+  display:flex;
+  padding: 1.5rem 1rem;
+  color: white;
+  background:#3f51b5;
+transition:.3s ease-in-out;
+border-radius: 25px ;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: .75rem 1rem;
+  color: white;
+  background-color: rgb(16, 16, 17);
+  font-size: .625rem;
+}
+.header-paralax {
+
+  width: 100%;
+  position: fixed;
+  height: 600px;
+}
+.toggleMenuStyle{
+  display: block;
+}
+
+.nav{
+
+  cursor: pointer;
+}

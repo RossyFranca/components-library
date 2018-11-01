@@ -1,0 +1,37 @@
+.collapsible{
+background-color: rgb(166, 185, 179);
+border: solid 1px lightgray;
+border-radius: 25px ;
+padding: 1rem;
+margin-bottom: 1rem;
+margin-top: 1rem;
+}
+
+
+.collapsible-header{
+display: flex;
+align-items: center;
+}
+
+
+.collapsible-header-label{
+
+  font-size: .875rem;
+}
+
+.collapsible-header-desc{
+  font-size: 1.125rem;
+  color:blue;
+  display: inline-block;
+  margin-left: 0.5rem;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s;
+}
+
+.collapsible-content-spacing {
+  padding-top: 1.5rem;
+}

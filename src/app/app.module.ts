@@ -7,6 +7,8 @@ import { CollapsibleComponent } from './collapsible/collapsible.component';
 import { ItemComponent } from './collapsible/item/item.component';
 import { ButtonComponent } from './button/button.component';
 import { FieldComponent } from './field/field.component';
+import { SharedModule } from './shared/shared.module';
+import { NgxMaskModule } from 'ngx-mask';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FieldComponent } from './field/field.component';
     FieldComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    SharedModule,
+    NgxMaskModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

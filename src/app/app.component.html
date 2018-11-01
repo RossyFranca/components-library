@@ -5,19 +5,36 @@
   </h1>
 </div>
 
-<app-header [items]="menuItems"></app-header>
 
+Header com menu dinâmico
+<app-header [items]="menuItems"></app-header>
+Field de preenchimento de formulário
 <app-field></app-field>
 
+collapsible diNãmico
+<app-collapsible label="Resumo" desc="teste">
+  <app-item [items]="collapsibleItems "></app-item>
+</app-collapsible>
+<app-collapsible label="Resumo" desc="teste">
+  <app-item [items]="collapsibleItems "></app-item>
+</app-collapsible>
+<app-collapsible label="Resumo" desc="teste">
+  <app-item [items]="collapsibleItems "></app-item>
+</app-collapsible>
 
-<app-collapsible label="Resumo" desc="teste">
-  <app-item [items]="collapsibleItems "></app-item>
-</app-collapsible>
-<app-collapsible label="Resumo" desc="teste">
-  <app-item [items]="collapsibleItems "></app-item>
-</app-collapsible>
-<app-collapsible label="Resumo" desc="teste">
-  <app-item [items]="collapsibleItems "></app-item>
-</app-collapsible>
-<div style="align-content: center"><app-button label="Button teste1"></app-button>
+
+botão
+<div style="align-content: center">
+  <app-button label="Button teste1"></app-button>
 </div>
+
+Pipe angular
+{{"21973201988"| phone}}
+
+<br>
+<!--ngx-mask-npm-->
+Máscaras para inputs
+<br>
+<input type='text' prefix="R$" mask="000.000.00">
+<input type='text' sufix="KG" mask="000">
+<input mask="(000) 0000-0000" prefix="+55" [showMaskTyped]="true">

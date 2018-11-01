@@ -1,0 +1,18 @@
+.form-group{
+
+margin-bottom:0;
+
+}
+.label{
+line-height:1.125rem;
+}
+.form-control{
+border-color: lightgrey;
+max-width: 520px;
+}
+.form-control:focus{
+box-shadow: none;
+border-color: darkgrey;
+}
+
+

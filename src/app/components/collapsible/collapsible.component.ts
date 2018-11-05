@@ -35,8 +35,4 @@ export class CollapsibleComponent {
     console.log('volta', content)
   }
 
-
-
-
-
 }

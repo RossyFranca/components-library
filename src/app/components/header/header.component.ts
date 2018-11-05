@@ -1,6 +1,8 @@
 import { Component, Input } from '@angular/core';
 
 
+var menuItems = './menu.json';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,7 +21,7 @@ export class HeaderComponent {
   onToggleMenu() {
     if (this.toggleMenu === true) {
       this.toggleMenu = false;
-      // this.subitems = undefined;
+      this.subitems = undefined;
       console.log('fechou')
     } else {
       this.toggleMenu = true;
@@ -27,17 +29,15 @@ export class HeaderComponent {
     }
   }
   getSubMenu(item: any) {
-    var menu = item.label;
-    if (this.toggleSubmenu === false ) {
-      this.subitems = item.children;
-      this.toggleSubmenu = true;
-      console.log("abre sub menu")
-    } else {
+    if (this.toggleSubmenu === true) {
       this.toggleSubmenu = false;
       this.subitems = undefined;
-      console.log('fechou sub menu')
-    }
 
+    } else {
+      this.toggleSubmenu = true;
+      this.subitems = item.children;
+
+    }
   }
   confirmaSubMenu(item: any) {
     alert('OK' + item.label)

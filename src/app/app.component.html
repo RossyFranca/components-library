@@ -38,3 +38,13 @@ Máscaras para inputs
 <input type='text' prefix="R$" mask="000.000.00">
 <input type='text' sufix="KG" mask="000">
 <input mask="(000) 0000-0000" prefix="+55" [showMaskTyped]="true">
+
+<br>
+
+
+Radio Button (selected value: {{field}})
+{{field}}
+<p>&nbsp;</p>
+<app-field-radio label="button 1" name="radio" value="Um" [(model)]="field"></app-field-radio>
+<app-field-radio label="button 2" name="radio" value="Dois" [(model)]="field"></app-field-radio>
+<app-field-radio label="button 3" name="radio" value="Tres" [(model)]="field" [disabled]="true"></app-field-radio>

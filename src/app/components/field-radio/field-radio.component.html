@@ -1,0 +1,6 @@
+<div class="form-check form-check-inline">
+  <input type="radio" class="form-check-input" [disabled]="disabled" [value]="value"
+   [name]="name" [(ngModel)]="model"
+    [id]="id" [checked]="model === value">
+  <label class="form-check-label" [for]="id">{{label}}</label>
+</div>

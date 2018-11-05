@@ -15,10 +15,11 @@
       <ul class="nav navbar-nav" *ngFor="let item of items">
         <li><a (click)="getSubMenu(item)">{{item.label}}</a>
           <ul>
-            <span *ngFor="let subitem of subitems">
-              <li *ngIf="item.label === subitem.father" (click)="confirmaSubMenu(subitem)">{{subitem.label}}</li>
-            </span>
-
+            <div *ngIf="!toogleSubmenu">
+              <span *ngFor="let subitem of subitems">
+                <li *ngIf="item.label === subitem.father" (click)="confirmaSubMenu(subitem)">{{subitem.label}}</li>
+              </span>
+            </div>
           </ul>
         </li>
       </ul>
